@@ -1,0 +1,63 @@
+{
+	"easycom": {
+		"autoscan": true,
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "农产品价格查询"
+			}
+		},
+		{
+			"path": "pages/sinopec/index",
+			"style": {
+				"navigationBarTitleText": "全国油价"
+			}
+		},
+		{
+			"path": "pages/about/index",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+
+				"pagePath": "pages/home/index",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home_select.png",
+				"text": "农产品价格查询"
+			},
+			{
+				"pagePath": "pages/sinopec/index",
+				"iconPath": "static/images/tabbar/oil_price.png",
+				"selectedIconPath": "static/images/tabbar/oil_price_select.png",
+				"text": "全国油价"
+			}, {
+				"pagePath": "pages/about/index",
+				"iconPath": "static/images/tabbar/about.png",
+				"selectedIconPath": "static/images/tabbar/about_select.png",
+				"text": "关于"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "农产品价格查询|全国油价查询|农产品批发价格查询",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

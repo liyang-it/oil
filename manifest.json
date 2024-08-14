@@ -1,0 +1,96 @@
+{
+    "name" : "农业价格查询",
+    "appid" : "__UNI__E32ADC9",
+    "description" : "实时查询全国农产品批发价格,粮油产品批发价格指数,农产品批发价格200指数,全国油价查询",
+    "versionName" : "1.0.1",
+    "versionCode" : 2,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {},
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "minSdkVersion" : 21
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "dSYMs" : false,
+                "idfa" : false
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "ad" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/images/icon/icon_72.png",
+                    "xhdpi" : "static/images/icon/icon_96.png",
+                    "xxhdpi" : "static/images/icon/icon_144.png",
+                    "xxxhdpi" : "static/images/icon/icon_192.png"
+                },
+                "ios" : {
+                    "appstore" : "static/images/icon/icon_1024.png"
+                }
+            },
+            "splashscreen" : {
+                "androidStyle" : "default",
+                "iosStyle" : "common"
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "3",
+    "fallbackLocale" : "zh-Hans",
+    "h5" : {
+        "title" : "农产品价格查询 | 全国油价查询| 农产品批发价格查询",
+        "devServer" : {
+            "https" : false
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "router" : {
+            // history模式配置：例如当前静态页面部署到 部署Nginx中的 oil目录，那么base就填写 /oil/
+            // hash模式配置：base填写 "./"
+            "base" : "./",
+            "mode" : "hash"
+        }
+    }
+}
